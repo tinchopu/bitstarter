@@ -87,7 +87,7 @@ if(require.main == module) {
 	.parse(process.argv);
 
 
-if(program.url!=""){
+if(program.url!=null &&program.url!=""){
 rest.get(program.url).on('complete', processResponse);
 
 
